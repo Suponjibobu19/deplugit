@@ -15,6 +15,13 @@
 import signal
 import sys
 from types import FrameType
+import pandas as pd
+import numpy as np
+from sklearn.model_selection import train_test_split
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.metrics import mean_squeard_error
+from sklearn.preprocessing import StandardScaler
+from sklearn.dataset import load_iris
 
 from flask import Flask
 
